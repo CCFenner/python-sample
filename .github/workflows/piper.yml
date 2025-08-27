@@ -1,0 +1,17 @@
+name: Piper
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run Python Build
+        uses: SAP/project-piper-action@main
+        with:
+          piper-version: devel:SAP:jenkins-library:python
+          command: pythonBuild
