@@ -13,5 +13,5 @@ jobs:
       - name: Run Python Build
         uses: SAP/project-piper-action@main
         with:
-          piper-version: devel:SAP:jenkins-library:python
+          piper-version: devel:SAP:jenkins-library:2cad9b8
           command: pythonBuild
