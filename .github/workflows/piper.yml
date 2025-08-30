@@ -1,4 +1,4 @@
-name: Piper
+name: Build
 
 on:
   workflow_dispatch:
@@ -13,5 +13,5 @@ jobs:
       - name: Run Python Build
         uses: SAP/project-piper-action@main
         with:
-          piper-version: devel:SAP:jenkins-library:2cad9b8
+          piper-version: devel:SAP:jenkins-library:d90c99f
           command: pythonBuild
